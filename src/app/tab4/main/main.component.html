@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tab4</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <h1>Tab4</h1>
+  @for (item of [1,2,3,4,5,6]; track $index) {
+      <ion-nav-link router-direction="forward" [component]="modal"
+        [componentProps]="{data: item}">
+        <ion-button>Modal  {{  item  }} </ion-button>
+      </ion-nav-link>
+  }
+</ion-content>
